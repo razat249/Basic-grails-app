@@ -1,5 +1,6 @@
 package com.test
 
+// Message model
 class Message {
 
 	String name
