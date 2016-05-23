@@ -1,0 +1,10 @@
+Testsuite: test.FormControllerSpec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 10.474 sec
+------------- Standard Output ---------------
+--Output from test form--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test form--
+------------- ---------------- ---------------
+
+Testcase: test form took 10.282 sec

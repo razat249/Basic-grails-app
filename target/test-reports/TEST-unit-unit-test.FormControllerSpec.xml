@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="causecode-Inspiron-3541" name="test.FormControllerSpec" tests="1" time="10.474" timestamp="2016-05-23T10:41:47">
+  <properties />
+  <testcase classname="test.FormControllerSpec" name="test form" time="10.281" />
+  <system-out><![CDATA[--Output from test form--
+]]></system-out>
+  <system-err><![CDATA[--Output from test form--
+]]></system-err>
+</testsuite>
