@@ -22,7 +22,7 @@
 	<body class="container">
 		<ul class="nav nav-pills nav-right">
 		  <li role="presentation"><a href="/test/message/index">Home</a></li>
-		  <li role="presentation"><a href="#">signIn</a></li>
+		  <li role="presentation"><a href="/test/message/admin">signIn</a></li>
 		</ul>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
