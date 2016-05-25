@@ -13,10 +13,10 @@
 				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div> -->
-		<div id="create-message" class="content scaffold-create" role="main">
-			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
+		<div id="create-message" class="content  scaffold-create" role="main">
+			<h3 class="text-primary"><g:message code="default.create.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
-			<div class="message" role="status">${flash.message}</div>
+			<div class="message " role="status">${flash.message}</div>
 			</g:if>
 			<g:hasErrors bean="${messageInstance}">
 			<ul class="errors" role="alert">
@@ -25,14 +25,20 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form url="[resource:messageInstance, action:'save']" >
-				<fieldset class="form">
-					<g:render template="form"/>
-				</fieldset>
-				<fieldset class="buttons">
-					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-				</fieldset>
-			</g:form>
+
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<g:form url="[resource:messageInstance, action:'save']" >
+						<fieldset class="form">
+							<g:render template="form"/>
+						</fieldset>
+						<fieldset class="buttons">
+							<g:submitButton name="create" class="save btn btn-primary" value="${message(code: 'default.button.create.label', default: 'Create')}" />
+						</fieldset>
+					</g:form>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

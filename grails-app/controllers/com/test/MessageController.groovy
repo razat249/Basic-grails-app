@@ -15,11 +15,12 @@ class MessageController {
         respond new Message(params)
     }
 
+    @Secured(['IS_AUTHENTICATED_FULLY'])
     def admin(Integer max){
     	params.max = Math.min(max ?: 10, 100)
         respond Message.list(params), model:[messageInstanceCount: Message.count()]
     }
-
+    @Secured(['ROLE_USER'])
     def show(Message messageInstance) {
         respond messageInstance
     }
@@ -28,6 +29,7 @@ class MessageController {
         respond new Message(params)
     }
 
+    @Secured(['IS_AUTHENTICATED_ANONYMOUSLY'])
     @Transactional
     def save(Message messageInstance) {
         if (messageInstance == null) {
